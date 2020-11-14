@@ -13,6 +13,8 @@
 		CC909674255F91CC002FCEDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC909672255F91CC002FCEDE /* Main.storyboard */; };
 		CC909676255F91CF002FCEDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC909675255F91CF002FCEDE /* Assets.xcassets */; };
 		CC909679255F91CF002FCEDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC909677255F91CF002FCEDE /* LaunchScreen.storyboard */; };
+		CC909689255F9281002FCEDE /* MsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC909688255F9281002FCEDE /* MsStoryboard.storyboard */; };
+		CC90968C255F9293002FCEDE /* HsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC90968B255F9293002FCEDE /* HsStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CC909675255F91CF002FCEDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC909678255F91CF002FCEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC90967A255F91CF002FCEDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC909688255F9281002FCEDE /* MsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MsStoryboard.storyboard; sourceTree = "<group>"; };
+		CC90968B255F9293002FCEDE /* HsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HsStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,73 @@
 		CC90966B255F91CC002FCEDE /* iOS_Design_Collaboration_Team1 */ = {
 			isa = PBXGroup;
 			children = (
-				CC90966C255F91CC002FCEDE /* AppDelegate.swift */,
-				CC90966E255F91CC002FCEDE /* SceneDelegate.swift */,
-				CC909670255F91CC002FCEDE /* ViewController.swift */,
-				CC909672255F91CC002FCEDE /* Main.storyboard */,
+				CC909682255F9223002FCEDE /* Sources */,
+				CC909681255F921D002FCEDE /* Resources */,
 				CC909675255F91CF002FCEDE /* Assets.xcassets */,
-				CC909677255F91CF002FCEDE /* LaunchScreen.storyboard */,
 				CC90967A255F91CF002FCEDE /* Info.plist */,
 			);
 			path = iOS_Design_Collaboration_Team1;
+			sourceTree = "<group>";
+		};
+		CC909681255F921D002FCEDE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC909684255F9238002FCEDE /* Delegates */,
+				CC909683255F922B002FCEDE /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CC909682255F9223002FCEDE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CC909687255F9254002FCEDE /* Data */,
+				CC909686255F924F002FCEDE /* Cells */,
+				CC909685255F9249002FCEDE /* ViewController */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CC909683255F922B002FCEDE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CC909672255F91CC002FCEDE /* Main.storyboard */,
+				CC909677255F91CF002FCEDE /* LaunchScreen.storyboard */,
+				CC909688255F9281002FCEDE /* MsStoryboard.storyboard */,
+				CC90968B255F9293002FCEDE /* HsStoryboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CC909684255F9238002FCEDE /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				CC90966C255F91CC002FCEDE /* AppDelegate.swift */,
+				CC90966E255F91CC002FCEDE /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		CC909685255F9249002FCEDE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CC909670255F91CC002FCEDE /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CC909686255F924F002FCEDE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CC909687255F9254002FCEDE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +189,8 @@
 				CC909679255F91CF002FCEDE /* LaunchScreen.storyboard in Resources */,
 				CC909676255F91CF002FCEDE /* Assets.xcassets in Resources */,
 				CC909674255F91CC002FCEDE /* Main.storyboard in Resources */,
+				CC90968C255F9293002FCEDE /* HsStoryboard.storyboard in Resources */,
+				CC909689255F9281002FCEDE /* MsStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
