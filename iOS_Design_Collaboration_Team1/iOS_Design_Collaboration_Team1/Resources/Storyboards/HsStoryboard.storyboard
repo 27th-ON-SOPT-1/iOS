@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ahA-fE-qPr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1V2-iZ-LdZ">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--상품-->
         <scene sceneID="xgB-EO-z4s">
             <objects>
                 <viewController id="yMs-L7-30Q" customClass="ItemViewController" customModule="iOS_Design_Collaboration_Team1" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="민승님을 위한" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwa-5O-Byr">
-                                <rect key="frame" x="33" y="119" width="157" height="35"/>
+                                <rect key="frame" x="33" y="163" width="157" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="ExK-np-cGY"/>
                                 </constraints>
@@ -27,14 +27,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLN-2z-XoV">
-                                <rect key="frame" x="330.33333333333331" y="52" width="43.666666666666686" height="43.666666666666657"/>
+                                <rect key="frame" x="330.33333333333331" y="96" width="43.666666666666686" height="43.666666666666657"/>
                                 <color key="backgroundColor" red="0.49019607840000001" green="0.49019607840000001" blue="0.49019607840000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eLN-2z-XoV" secondAttribute="height" multiplier="1:1" id="h6J-rO-JYT"/>
                                 </constraints>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천 상품이에요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kY1-LW-Ab2">
-                                <rect key="frame" x="33" y="161" width="182" height="35"/>
+                                <rect key="frame" x="33" y="205" width="182" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="MUI-sS-ilH"/>
                                 </constraints>
@@ -150,7 +150,7 @@
                                 </cells>
                             </collectionView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mOs-bc-4Y5">
-                                <rect key="frame" x="134" y="707.33333333333337" width="122" height="8"/>
+                                <rect key="frame" x="134" y="751.33333333333337" width="122" height="8"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="8" id="W9Z-Sl-EJv"/>
                                     <constraint firstAttribute="width" constant="122" id="bxW-kR-f1r"/>
@@ -175,7 +175,7 @@
                             <constraint firstItem="Lwa-5O-Byr" firstAttribute="leading" secondItem="DaT-HJ-DQp" secondAttribute="leading" constant="33" id="wUd-gz-svm"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="0rb-US-w2O"/>
+                    <tabBarItem key="tabBarItem" title="상품" image="btnGoodsActive" id="0rb-US-w2O"/>
                     <connections>
                         <outlet property="cardPageControl" destination="mOs-bc-4Y5" id="5QI-KI-PU2"/>
                         <outlet property="itemCollectionView" destination="6SH-jG-PLv" id="jag-uZ-ij8"/>
@@ -184,28 +184,151 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5QD-yI-6GC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079.7101449275362" y="88.392857142857139"/>
+            <point key="canvasLocation" x="174" y="1440"/>
+        </scene>
+        <!--설정-->
+        <scene sceneID="GZm-1K-dt1">
+            <objects>
+                <viewController id="XHF-9f-tga" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="80B-Mi-aMh">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2i0-0p-DFK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="설정" image="btnSettingInactive" id="P6z-SH-vjd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XPN-dc-Fsg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="2136"/>
+        </scene>
+        <!--홈-->
+        <scene sceneID="rxp-A7-h6j">
+            <objects>
+                <viewController id="GkW-uW-744" customClass="MsViewController" customModule="iOS_Design_Collaboration_Team1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Km7-Xq-BCv">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="선민승님" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wge-CJ-m10">
+                                <rect key="frame" x="17.999999999999996" y="115" width="62.666666666666657" height="21.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="총자산" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRt-Lk-NnM">
+                                <rect key="frame" x="175.66666666666666" y="173.66666666666666" width="39" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eqS-ie-jgu">
+                                <rect key="frame" x="362" y="71" width="42" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="LYr-F6-VSg"/>
+                                    <constraint firstAttribute="width" secondItem="eqS-ie-jgu" secondAttribute="height" multiplier="1:1" id="vgy-d7-Xbt"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gsm-YJ-o3R">
+                                <rect key="frame" x="0.0" y="318" width="390" height="526"/>
+                                <color key="backgroundColor" red="0.90597254039999997" green="0.90565860269999998" blue="0.91764986520000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THa-0u-8J1">
+                                <rect key="frame" x="121" y="199.66666666666666" width="148" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mlr-Lu-U1d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wge-CJ-m10" firstAttribute="top" secondItem="mlr-Lu-U1d" secondAttribute="top" constant="27" id="7IH-p8-rDO"/>
+                            <constraint firstItem="Gsm-YJ-o3R" firstAttribute="top" secondItem="mlr-Lu-U1d" secondAttribute="top" constant="230" id="EPf-8o-323"/>
+                            <constraint firstItem="mlr-Lu-U1d" firstAttribute="trailing" secondItem="eqS-ie-jgu" secondAttribute="trailing" constant="15" id="GJe-DQ-2H7"/>
+                            <constraint firstItem="Gsm-YJ-o3R" firstAttribute="trailing" secondItem="mlr-Lu-U1d" secondAttribute="trailing" id="KoA-4o-DXo"/>
+                            <constraint firstItem="YRt-Lk-NnM" firstAttribute="top" secondItem="wge-CJ-m10" secondAttribute="bottom" constant="37" id="UcI-cF-LXM"/>
+                            <constraint firstItem="eqS-ie-jgu" firstAttribute="top" secondItem="mlr-Lu-U1d" secondAttribute="top" constant="8" id="cjy-88-OMJ"/>
+                            <constraint firstItem="THa-0u-8J1" firstAttribute="centerX" secondItem="mlr-Lu-U1d" secondAttribute="centerX" id="l7c-QW-NZp"/>
+                            <constraint firstItem="wge-CJ-m10" firstAttribute="leading" secondItem="mlr-Lu-U1d" secondAttribute="leading" constant="18" id="ob4-Ed-yPy"/>
+                            <constraint firstItem="Gsm-YJ-o3R" firstAttribute="leading" secondItem="mlr-Lu-U1d" secondAttribute="leading" id="qiR-GY-Bei"/>
+                            <constraint firstAttribute="bottom" secondItem="Gsm-YJ-o3R" secondAttribute="bottom" id="tR3-yf-hKR"/>
+                            <constraint firstItem="YRt-Lk-NnM" firstAttribute="centerX" secondItem="mlr-Lu-U1d" secondAttribute="centerX" id="ylB-Al-pca"/>
+                            <constraint firstItem="THa-0u-8J1" firstAttribute="top" secondItem="YRt-Lk-NnM" secondAttribute="bottom" constant="8" id="zni-gE-YeC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="홈" image="btnHomeInactive" id="CZ2-ve-1v9"/>
+                    <connections>
+                        <outlet property="assetLabel" destination="YRt-Lk-NnM" id="LjN-9p-Yv2"/>
+                        <outlet property="numberLabel" destination="THa-0u-8J1" id="WJ4-mt-oyj"/>
+                        <outlet property="postView" destination="Gsm-YJ-o3R" id="cWb-XY-LDK"/>
+                        <outlet property="userImage" destination="eqS-ie-jgu" id="fK9-nK-wvL"/>
+                        <outlet property="userName" destination="wge-CJ-m10" id="OmC-YM-B7x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMk-AY-6xj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189.23076923076923" y="86.729857819905206"/>
+        </scene>
+        <!--거래내역-->
+        <scene sceneID="LY8-75-AGO">
+            <objects>
+                <viewController id="cts-t8-Ykr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l9p-lQ-Qob">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="atZ-vj-vfi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="거래내역" image="btnListInactive" id="Y0G-Ee-7dV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0p-a1-cyo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="190" y="756"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MhN-Yf-oVM">
+            <objects>
+                <navigationController id="1V2-iZ-LdZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hhf-xq-6cq">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QkZ-Q2-g0b" kind="relationship" relationship="rootViewController" id="3Yn-tg-H8A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9xA-kB-OWu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2486" y="101"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="zw8-Vo-ulH">
+        <scene sceneID="Y42-yZ-Exe">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ahA-fE-qPr" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="QkZ-Q2-g0b" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ybx-MV-UlW">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                    <navigationItem key="navigationItem" id="5ow-sA-1Up"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mT2-N3-mwT">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="yMs-L7-30Q" kind="relationship" relationship="viewControllers" id="hne-c2-35U"/>
+                        <segue destination="GkW-uW-744" kind="relationship" relationship="viewControllers" id="dnR-wl-60T"/>
+                        <segue destination="cts-t8-Ykr" kind="relationship" relationship="viewControllers" id="FUA-oV-QJ9"/>
+                        <segue destination="yMs-L7-30Q" kind="relationship" relationship="viewControllers" id="hn5-9m-CPG"/>
+                        <segue destination="XHF-9f-tga" kind="relationship" relationship="viewControllers" id="tlM-gR-dUh"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ttP-dK-Vdk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IbG-i8-UT0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.40000000000001" y="88.669950738916256"/>
+            <point key="canvasLocation" x="-740" y="86.729857819905206"/>
         </scene>
     </scenes>
     <resources>
+        <image name="btnGoodsActive" width="24.333333969116211" height="24"/>
+        <image name="btnHomeInactive" width="24" height="24"/>
+        <image name="btnListInactive" width="24.333333969116211" height="24"/>
+        <image name="btnSettingInactive" width="24.333333969116211" height="24"/>
         <image name="icCardbox" width="310" height="450"/>
         <image name="icPattern" width="259" height="136"/>
         <image name="icPiggy" width="154" height="168.33332824707031"/>
