@@ -1,7 +1,84 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RsZ-xp-jhs">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Ms View Controller-->
+        <scene sceneID="rc9-On-pok">
+            <objects>
+                <viewController id="RsZ-xp-jhs" customClass="MsViewController" customModule="iOS_Design_Collaboration_Team1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kwQ-Nz-i3f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="선민승님" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe1-XV-Y78">
+                                <rect key="frame" x="18" y="71" width="62.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="총자산" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKh-oH-62B">
+                                <rect key="frame" x="187.5" y="129.5" width="39" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="grW-xt-zJR">
+                                <rect key="frame" x="362" y="71" width="42" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="5nv-Mr-oK7"/>
+                                    <constraint firstAttribute="width" secondItem="grW-xt-zJR" secondAttribute="height" multiplier="1:1" id="JpX-2Q-ZL5"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2W-sA-gks">
+                                <rect key="frame" x="0.0" y="274" width="414" height="622"/>
+                                <color key="backgroundColor" red="0.90597254039999997" green="0.90565860269999998" blue="0.91764986520000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqw-Bb-8Vo">
+                                <rect key="frame" x="133" y="155.5" width="148" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nQf-Sn-1Ib"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oqw-Bb-8Vo" firstAttribute="top" secondItem="rKh-oH-62B" secondAttribute="bottom" constant="8" id="3jQ-8a-sUl"/>
+                            <constraint firstAttribute="bottom" secondItem="t2W-sA-gks" secondAttribute="bottom" id="Gim-VA-qa9"/>
+                            <constraint firstItem="t2W-sA-gks" firstAttribute="top" secondItem="nQf-Sn-1Ib" secondAttribute="top" constant="230" id="GtS-Iw-UDa"/>
+                            <constraint firstItem="oqw-Bb-8Vo" firstAttribute="centerX" secondItem="nQf-Sn-1Ib" secondAttribute="centerX" id="HSo-lN-MfN"/>
+                            <constraint firstItem="t2W-sA-gks" firstAttribute="leading" secondItem="nQf-Sn-1Ib" secondAttribute="leading" id="MbA-wy-Cny"/>
+                            <constraint firstItem="t2W-sA-gks" firstAttribute="trailing" secondItem="nQf-Sn-1Ib" secondAttribute="trailing" id="RIa-da-6BB"/>
+                            <constraint firstItem="Pe1-XV-Y78" firstAttribute="leading" secondItem="nQf-Sn-1Ib" secondAttribute="leading" constant="18" id="Zsu-in-JbH"/>
+                            <constraint firstItem="nQf-Sn-1Ib" firstAttribute="trailing" secondItem="grW-xt-zJR" secondAttribute="trailing" constant="15" id="ctL-RR-Fe7"/>
+                            <constraint firstItem="rKh-oH-62B" firstAttribute="top" secondItem="Pe1-XV-Y78" secondAttribute="bottom" constant="37" id="gnb-dv-x3y"/>
+                            <constraint firstItem="grW-xt-zJR" firstAttribute="top" secondItem="nQf-Sn-1Ib" secondAttribute="top" constant="8" id="psN-tZ-Teo"/>
+                            <constraint firstItem="rKh-oH-62B" firstAttribute="centerX" secondItem="nQf-Sn-1Ib" secondAttribute="centerX" id="pta-UV-zZk"/>
+                            <constraint firstItem="Pe1-XV-Y78" firstAttribute="top" secondItem="nQf-Sn-1Ib" secondAttribute="top" constant="27" id="vfw-B8-JYu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="assetLabel" destination="rKh-oH-62B" id="w4c-Hn-dZ2"/>
+                        <outlet property="numberLabel" destination="oqw-Bb-8Vo" id="zIm-3l-M4Q"/>
+                        <outlet property="postView" destination="t2W-sA-gks" id="G3f-h5-Mcl"/>
+                        <outlet property="userImage" destination="grW-xt-zJR" id="Rod-G8-fqw"/>
+                        <outlet property="userName" destination="Pe1-XV-Y78" id="BxY-4O-T9b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z7p-VR-oJ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2739.130434782609" y="-376.33928571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
