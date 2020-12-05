@@ -8,41 +8,42 @@
 import UIKit
 
 class MsViewController: UIViewController {
+  
+  @IBOutlet var userName: UILabel!
+  @IBOutlet var userImage: UIImageView!
+  @IBOutlet var assetLabel: UILabel!
+  @IBOutlet var numberLabel: UILabel!
+  @IBOutlet var postView: UIView!
+  @IBOutlet weak var assetTableView: UITableView!
+  
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    initLayout()
+    postViewAutoLayout()
     
-    @IBOutlet var userName: UILabel!
-    @IBOutlet var userImage: UIImageView!
-    @IBOutlet var assetLabel: UILabel!
-    @IBOutlet var numberLabel: UILabel!
-    @IBOutlet var postView: UIView!
+  }
+  
+  
+  func initLayout(){
+    self.view.backgroundColor = UIColor.mainBlue
+    self.userName.textColor = .white
+    self.userImage.layer.cornerRadius = 30
+    self.userImage.image = UIImage(named: "userImage")
+    self.assetLabel.textColor = UIColor.white80
+    self.numberLabel.textColor = UIColor.backgroundWhite
+    self.postView.backgroundColor = UIColor.paleGrey
+    self.postView.layoutIfNeeded()
+    self.postView.roundedTop()
     
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        initLayout()
-        postViewAutoLayout()
-     
-    }
+  }
+  
+  func postViewAutoLayout() {
     
-    
-    func initLayout(){
-        self.view.backgroundColor = UIColor.mainBlue
-        self.userName.textColor = .white
-        self.userImage.layer.cornerRadius = 30
-        self.userImage.image = UIImage(named: "userImage")
-        self.assetLabel.textColor = UIColor.white80
-        self.numberLabel.textColor = UIColor.backgroundWhite
-        self.postView.backgroundColor = UIColor.paleGrey
-        self.postView.layoutIfNeeded()
-        self.postView.roundedTop()
-        
-    }
-    
-    func postViewAutoLayout() {
-
-    }
-    
-    
-    
+  }
+  
+  
+  
 }
 
 
