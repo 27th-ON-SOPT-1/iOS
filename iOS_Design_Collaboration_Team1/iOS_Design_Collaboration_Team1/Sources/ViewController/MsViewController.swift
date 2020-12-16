@@ -43,12 +43,6 @@ class MsViewController: UIViewController {
         self.postView.layoutIfNeeded()
         self.postView.roundedTop()
         
-//        let headerView = UIView(frame: CGRect(x: 0,
-//                                              y: 0,
-//                                              width: self.assetTableView.frame.width,
-//                                              height: 86))
-////        headerView.backgroundColor = .green
-//        self.assetTableView.tableHeaderView = headerView
     }
     
     func setAccountData() {

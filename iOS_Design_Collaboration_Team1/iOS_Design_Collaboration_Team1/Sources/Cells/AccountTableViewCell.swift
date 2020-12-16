@@ -18,9 +18,13 @@ class AccountTableViewCell: UITableViewCell {
    
     @IBOutlet var boxLeading: NSLayoutConstraint!
     @IBOutlet var boxTrailing: NSLayoutConstraint!
+
     
     override func awakeFromNib() {
+        
         super.awakeFromNib()
+        
+
         // Initialization code
         let screenHeight = UIScreen.main.bounds.height
 
@@ -36,5 +40,12 @@ class AccountTableViewCell: UITableViewCell {
         bankNameLabel.text = "은행명"
 
     }
-
+//    override func layoutSubviews() {
+//          super.layoutSubviews()
+//          //set the values for top,left,bottom,right margins
+//          let margins = UIEdgeInsets(top: 30, left: 10, bottom: 30, right: 10)
+//          contentView.frame = contentView.frame.inset(by: margins)
+//          contentView.layer.cornerRadius = 8
+//    }
 }
+
