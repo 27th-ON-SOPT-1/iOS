@@ -244,10 +244,10 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41j-wi-FfE">
-                                                            <rect key="frame" x="66.333333333333343" y="0.0" width="257.33333333333326" height="56.333333333333336"/>
+                                                            <rect key="frame" x="28" y="0.0" width="334" height="56.333333333333336"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icListbox" translatesAutoresizingMaskIntoConstraints="NO" id="g6B-az-wX8">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="257.33333333333331" height="56.333333333333336"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icListbox" translatesAutoresizingMaskIntoConstraints="NO" id="g6B-az-wX8">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="56.333333333333336"/>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fOT-7e-7by">
                                                                     <rect key="frame" x="24" y="17.666666666666668" width="21" height="21.000000000000004"/>
@@ -266,7 +266,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lnz-1g-0Hg">
-                                                                    <rect key="frame" x="194" y="18.666666666666671" width="41.333333333333343" height="19.333333333333329"/>
+                                                                    <rect key="frame" x="270.66666666666669" y="18.666666666666671" width="41.333333333333314" height="19.333333333333329"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -291,6 +291,7 @@
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="41j-wi-FfE" secondAttribute="bottom" id="BqN-Ab-weY"/>
+                                                        <constraint firstItem="41j-wi-FfE" firstAttribute="leading" secondItem="WiZ-rd-Pzz" secondAttribute="leading" constant="28" id="TWY-Oq-wRI"/>
                                                         <constraint firstItem="41j-wi-FfE" firstAttribute="centerX" secondItem="WiZ-rd-Pzz" secondAttribute="centerX" id="Y1S-Gd-OUT"/>
                                                         <constraint firstItem="41j-wi-FfE" firstAttribute="top" secondItem="WiZ-rd-Pzz" secondAttribute="top" id="s5T-NZ-fLv"/>
                                                     </constraints>
