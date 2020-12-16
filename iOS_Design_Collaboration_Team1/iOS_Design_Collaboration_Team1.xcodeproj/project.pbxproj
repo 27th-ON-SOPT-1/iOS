@@ -10,6 +10,8 @@
 		9E0D273D255F9608000EA546 /* MsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D273C255F9608000EA546 /* MsViewController.swift */; };
 		9E0D2741255FCF00000EA546 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D2740255FCF00000EA546 /* UIViewExtensions.swift */; };
 		9E0D2745255FCF2A000EA546 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D2744255FCF2A000EA546 /* UIColorExtensions.swift */; };
+		9EACC8ED258483F500B8D55A /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EACC8EC258483F500B8D55A /* AccountTableViewCell.swift */; };
+		9EACC8F0258488A800B8D55A /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EACC8EF258488A800B8D55A /* AccountModel.swift */; };
 		CC90966D255F91CC002FCEDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC90966C255F91CC002FCEDE /* AppDelegate.swift */; };
 		CC90966F255F91CC002FCEDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC90966E255F91CC002FCEDE /* SceneDelegate.swift */; };
 		CC909671255F91CC002FCEDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC909670255F91CC002FCEDE /* ViewController.swift */; };
@@ -26,6 +28,8 @@
 		9E0D273C255F9608000EA546 /* MsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsViewController.swift; sourceTree = "<group>"; };
 		9E0D2740255FCF00000EA546 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		9E0D2744255FCF2A000EA546 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		9EACC8EC258483F500B8D55A /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		9EACC8EF258488A800B8D55A /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountModel.swift; path = iOS_Design_Collaboration_Team1/Sources/Cells/AccountModel.swift; sourceTree = SOURCE_ROOT; };
 		CC909669255F91CC002FCEDE /* iOS_Design_Collaboration_Team1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Design_Collaboration_Team1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC90966C255F91CC002FCEDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC90966E255F91CC002FCEDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				CCF2BBBE2577F9E9008CF50C /* ItemCollectionViewCell.swift */,
+				9EACC8EC258483F500B8D55A /* AccountTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 		CC909687255F9254002FCEDE /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				9EACC8EF258488A800B8D55A /* AccountModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -227,10 +233,12 @@
 				CCF2BBBF2577F9E9008CF50C /* ItemCollectionViewCell.swift in Sources */,
 				CC909671255F91CC002FCEDE /* ViewController.swift in Sources */,
 				CC909690255F9E8C002FCEDE /* ItemViewController.swift in Sources */,
+				9EACC8ED258483F500B8D55A /* AccountTableViewCell.swift in Sources */,
 				9E0D273D255F9608000EA546 /* MsViewController.swift in Sources */,
 				9E0D2741255FCF00000EA546 /* UIViewExtensions.swift in Sources */,
 				CC909671255F91CC002FCEDE /* ViewController.swift in Sources */,
 				9E0D2745255FCF2A000EA546 /* UIColorExtensions.swift in Sources */,
+				9EACC8F0258488A800B8D55A /* AccountModel.swift in Sources */,
 				CC90966D255F91CC002FCEDE /* AppDelegate.swift in Sources */,
 				CC90966F255F91CC002FCEDE /* SceneDelegate.swift in Sources */,
 			);
