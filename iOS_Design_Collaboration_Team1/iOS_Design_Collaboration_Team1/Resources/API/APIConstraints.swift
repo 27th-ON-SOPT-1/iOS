@@ -9,7 +9,7 @@ import Foundation
 
 struct APIConstraints {
   static let baseURL = "http://52.78.212.95:3002"
-  static let users = "/users/"
+  static let users =  "/users"
   static let products = "/products"
-  static let profile = "/profile"
+  static let profile = baseURL + "/profile"
 }

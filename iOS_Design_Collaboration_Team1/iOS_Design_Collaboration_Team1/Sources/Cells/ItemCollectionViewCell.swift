@@ -22,6 +22,16 @@ class ItemCollectionViewCell: UICollectionViewCell {
   func setImage(imageName: String) {
     itemImageView.image = UIImage(named: imageName)
   }
+  func setImg(imageURL: String) {
+    let data = try? Data(contentsOf: URL(string: imageURL)!)
+    itemImageView.image = UIImage(data: data!)
+  }
   
+  func setItemCell(productName: String, subtitle: String, imageURL: String) {
+    let data = try? Data(contentsOf: URL(string: imageURL)!)
+    self.mainNameLabel.text = productName
+    self.subLabel.text = subtitle
+    self.itemImageView.image = UIImage(data: data!)
+  }
   
 }

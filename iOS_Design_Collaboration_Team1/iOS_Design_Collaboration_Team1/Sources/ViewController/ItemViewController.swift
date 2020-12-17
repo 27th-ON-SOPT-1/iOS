@@ -14,7 +14,7 @@ class ItemViewController: UIViewController {
   @IBOutlet weak var profileButton: UIButton!
   
   // MARK: - Properties
-  var items: [String] = ["icPiggy", "icPiggy", "icPiggy"]
+  var items: [ProductModel] = []
   var currentIndex: CGFloat = 0
   
   // MARK: - Functions
@@ -31,11 +31,37 @@ class ItemViewController: UIViewController {
   // MARK: - View LifeCycles
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    ProductService.shared.showProducts() { NetworkResults in
+      switch NetworkResults {
+      case .success(let data) :
+        guard let data = data as? [T] else {return}
+        var tempList:[ProductModel] = []
+        for i in 0..<data.count {
+          let productInfo = ProductModel.init(id: data[i].id, productName: data[i].productName, subtitle: data[i].subtitle, productImageUrl: data[i].productImageUrl)
+          tempList.append(productInfo)
+        }
+        self.items = tempList
+        self.itemCollectionView.reloadData()
+      case .requestError(let message):
+        guard let message = message as? String else {return}
+        let alertViewController = UIAlertController(title: "불러오기 실패", message: message,
+                                                    preferredStyle: .alert)
+        let action = UIAlertAction(title: "확인", style: .cancel, handler: nil)
+        alertViewController.addAction(action)
+        self.present(alertViewController, animated: true, completion: nil)
+      case .pathError: print("path")
+      case .serverError: print("serverError")
+      case .networkFail: print("networkFail")
+    
+      }
+    }
     self.itemCollectionView.delegate = self
     self.itemCollectionView.dataSource = self
     profileButtonInitLayout()
     pageControlInitLayout()
   }
+  
   
   // MARK: - Extensions
 }
@@ -47,7 +73,7 @@ extension ItemViewController: UICollectionViewDataSource {
     guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemCollectionViewCell", for: indexPath) as? ItemCollectionViewCell else {
       return UICollectionViewCell()
     }
-    cell.setImage(imageName: items[indexPath.item])
+    cell.setItemCell(productName: self.items[indexPath.item].productName, subtitle: self.items[indexPath.item].subtitle, imageURL: self.items[indexPath.item].productImageUrl)
     cell.applyButton.layer.cornerRadius = 30
     cell.itemImageView.layer.zPosition = 1
     return cell

@@ -28,6 +28,7 @@
 		CCE2EFE5258B7F0800A0FFA0 /* HsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE2EFE4258B7F0800A0FFA0 /* HsData.swift */; };
 		CCE2EFE8258B7F1400A0FFA0 /* MsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE2EFE7258B7F1400A0FFA0 /* MsServices.swift */; };
 		CCE2EFEB258B7F1C00A0FFA0 /* MsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE2EFEA258B7F1C00A0FFA0 /* MsData.swift */; };
+		CCE2EFEF258B88EC00A0FFA0 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE2EFEE258B88EC00A0FFA0 /* ProductModel.swift */; };
 		CCF2BBBF2577F9E9008CF50C /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF2BBBE2577F9E9008CF50C /* ItemCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		CCE2EFE4258B7F0800A0FFA0 /* HsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HsData.swift; sourceTree = "<group>"; };
 		CCE2EFE7258B7F1400A0FFA0 /* MsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsServices.swift; sourceTree = "<group>"; };
 		CCE2EFEA258B7F1C00A0FFA0 /* MsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsData.swift; sourceTree = "<group>"; };
+		CCE2EFEE258B88EC00A0FFA0 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		CCF2BBBE2577F9E9008CF50C /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				9EACC8EF258488A800B8D55A /* AccountModel.swift */,
+				CCE2EFEE258B88EC00A0FFA0 /* ProductModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				CCE2EFD7258B7BFF00A0FFA0 /* APIConstraints.swift in Sources */,
 				CC90966D255F91CC002FCEDE /* AppDelegate.swift in Sources */,
 				CC90966F255F91CC002FCEDE /* SceneDelegate.swift in Sources */,
+				CCE2EFEF258B88EC00A0FFA0 /* ProductModel.swift in Sources */,
 				CCE2EFE2258B7F0000A0FFA0 /* HsServices.swift in Sources */,
 				CCE2EFDF258B7EDA00A0FFA0 /* NetworkResults.swift in Sources */,
 				CCE2EFEB258B7F1C00A0FFA0 /* MsData.swift in Sources */,
