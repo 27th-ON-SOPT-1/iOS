@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1V2-iZ-LdZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1V2-iZ-LdZ">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -274,24 +274,24 @@
                                                             <rect key="frame" x="19" y="0.0" width="371" height="90.333333333333329"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icListbox" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="duD-xF-qbL">
-                                                                    <rect key="frame" x="29" y="0.0" width="313" height="90"/>
+                                                                    <rect key="frame" x="15" y="0.0" width="341" height="90.333333333333329"/>
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lnz-1g-0Hg">
-                                                                    <rect key="frame" x="258.33333333333331" y="35" width="68.666666666666686" height="20.333333333333329"/>
+                                                                    <rect key="frame" x="267.33333333333331" y="35" width="68.666666666666686" height="20.333333333333329"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icBank" translatesAutoresizingMaskIntoConstraints="NO" id="fOT-7e-7by">
-                                                                    <rect key="frame" x="36" y="25.000000000000004" width="40.333333333333343" height="40.333333333333343"/>
+                                                                    <rect key="frame" x="29.999999999999996" y="40" width="10.333333333333332" height="10.333333333333336"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="fOT-7e-7by" secondAttribute="height" multiplier="1:1" id="j0K-hg-kRq"/>
                                                                     </constraints>
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="은행명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjH-1h-g8o">
-                                                                    <rect key="frame" x="78" y="35" width="47" height="20.333333333333329"/>
+                                                                    <rect key="frame" x="64" y="35" width="47" height="20.333333333333329"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -301,17 +301,17 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="bottom" secondItem="YjH-1h-g8o" secondAttribute="bottom" constant="35" id="1pp-qc-yHS"/>
                                                                 <constraint firstItem="YjH-1h-g8o" firstAttribute="leading" secondItem="duD-xF-qbL" secondAttribute="leading" constant="49" id="8ns-Mt-FM8"/>
-                                                                <constraint firstAttribute="bottom" secondItem="fOT-7e-7by" secondAttribute="bottom" constant="25" id="I9Q-od-VAd"/>
+                                                                <constraint firstAttribute="bottom" secondItem="fOT-7e-7by" secondAttribute="bottom" constant="40" id="I9Q-od-VAd"/>
                                                                 <constraint firstItem="duD-xF-qbL" firstAttribute="centerY" secondItem="41j-wi-FfE" secondAttribute="centerY" id="IgS-yE-iMc"/>
                                                                 <constraint firstItem="duD-xF-qbL" firstAttribute="centerX" secondItem="41j-wi-FfE" secondAttribute="centerX" id="WdO-me-2W5"/>
                                                                 <constraint firstAttribute="height" constant="90" id="aH7-2o-K1V"/>
-                                                                <constraint firstItem="fOT-7e-7by" firstAttribute="leading" secondItem="duD-xF-qbL" secondAttribute="leading" constant="7" id="as9-WE-T4f"/>
+                                                                <constraint firstItem="fOT-7e-7by" firstAttribute="leading" secondItem="duD-xF-qbL" secondAttribute="leading" constant="15" id="as9-WE-T4f"/>
                                                                 <constraint firstItem="YjH-1h-g8o" firstAttribute="top" secondItem="41j-wi-FfE" secondAttribute="top" constant="35" id="dRZ-gK-KVv"/>
                                                                 <constraint firstItem="Lnz-1g-0Hg" firstAttribute="top" secondItem="41j-wi-FfE" secondAttribute="top" constant="35" id="jZa-tq-U4C"/>
-                                                                <constraint firstItem="duD-xF-qbL" firstAttribute="leading" secondItem="41j-wi-FfE" secondAttribute="leading" constant="29" id="ncx-mQ-4vV"/>
-                                                                <constraint firstAttribute="trailing" secondItem="duD-xF-qbL" secondAttribute="trailing" constant="29" id="ojv-Eu-5Pn"/>
-                                                                <constraint firstItem="Lnz-1g-0Hg" firstAttribute="trailing" secondItem="duD-xF-qbL" secondAttribute="trailing" constant="-15" id="oq2-80-Dkh"/>
-                                                                <constraint firstItem="fOT-7e-7by" firstAttribute="top" secondItem="41j-wi-FfE" secondAttribute="top" constant="25" id="rMr-yj-4X9"/>
+                                                                <constraint firstItem="duD-xF-qbL" firstAttribute="leading" secondItem="41j-wi-FfE" secondAttribute="leading" constant="15" id="ncx-mQ-4vV"/>
+                                                                <constraint firstAttribute="trailing" secondItem="duD-xF-qbL" secondAttribute="trailing" constant="15" id="ojv-Eu-5Pn"/>
+                                                                <constraint firstItem="Lnz-1g-0Hg" firstAttribute="trailing" secondItem="duD-xF-qbL" secondAttribute="trailing" constant="-20" id="oq2-80-Dkh"/>
+                                                                <constraint firstItem="fOT-7e-7by" firstAttribute="top" secondItem="41j-wi-FfE" secondAttribute="top" constant="40" id="rMr-yj-4X9"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Lnz-1g-0Hg" secondAttribute="bottom" constant="35" id="sQb-2e-aeL"/>
                                                                 <constraint firstItem="duD-xF-qbL" firstAttribute="top" secondItem="41j-wi-FfE" secondAttribute="top" id="tCw-lP-Fq6"/>
                                                             </constraints>
@@ -324,6 +324,7 @@
                                                         <constraint firstItem="41j-wi-FfE" firstAttribute="top" secondItem="WiZ-rd-Pzz" secondAttribute="top" id="s5T-NZ-fLv"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <connections>
                                                     <outlet property="amountLabel" destination="Lnz-1g-0Hg" id="ddH-bd-Zcq"/>
                                                     <outlet property="bankNameLabel" destination="YjH-1h-g8o" id="PC4-xx-fy0"/>

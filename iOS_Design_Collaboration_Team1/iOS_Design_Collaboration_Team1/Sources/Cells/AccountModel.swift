@@ -17,3 +17,23 @@ struct Account {
         return UIImage(named: accountImageName)
     }
 }
+
+// MARK: - DataClass
+struct DataClass: Codable {
+    let id: Int
+    let username: String
+    let profilePictureURL: String
+    let banks: [Bank]
+
+    enum CodingKeys: String, CodingKey {
+        case id, username
+        case profilePictureURL = "profilePictureUrl"
+        case banks = "Banks"
+    }
+}
+
+// MARK: - Bank
+struct Bank: Codable {
+    let bankName: String
+    let balance: Int
+}
