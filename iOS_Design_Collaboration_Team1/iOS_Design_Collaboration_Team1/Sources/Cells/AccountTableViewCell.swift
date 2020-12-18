@@ -40,6 +40,8 @@ class AccountTableViewCell: UITableViewCell {
         bankNameLabel.text = "은행명"
 
     }
+    
+
 //    override func layoutSubviews() {
 //          super.layoutSubviews()
 //          //set the values for top,left,bottom,right margins
