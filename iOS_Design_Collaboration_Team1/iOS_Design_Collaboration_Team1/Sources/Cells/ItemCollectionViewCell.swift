@@ -34,4 +34,28 @@ class ItemCollectionViewCell: UICollectionViewCell {
     self.itemImageView.image = UIImage(data: data!)
   }
   
+  func decimalFormatter(number: Int) -> String? {
+    let numberFormatter = NumberFormatter()
+    numberFormatter.numberStyle = .decimal
+    let result = numberFormatter.string(for: number)
+    return result
+  }
+  
+  func sumOfNumber(numbers:[Int]) -> Int? {
+    var sum = 0
+    for i in 0..<numbers.count {
+      sum += numbers[i]
+    }
+    return sum
+  }
+  
+  func checkColor(number:Int) -> CGColor? {
+    if number < 0 {
+      return CGColor(red: 236/255, green: 93/255, blue: 119/255, alpha: 1)
+    }
+    else {
+      return CGColor(red: 22/255, green: 193/255, blue: 155/255, alpha: 1)
+    }
+  }
+  
 }
