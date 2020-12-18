@@ -21,7 +21,7 @@ struct BankService {
             case .success:
                 guard let statusCode = dataResponse.response?.statusCode else{return}
                 guard let value = dataResponse.value else {return}
-                let networkResult = judge(by: statusCode, value)
+                let networkResult = judge1(by: statusCode, value)
                 completion(networkResult)
             case .failure: completion(.networkFail)
             }
@@ -30,16 +30,16 @@ struct BankService {
     }
 }
 
-func isUser(by data: Data) -> NetworkResults<Any> {
+func isUser1(by data: Data) -> NetworkResults<Any> {
     let decoder = JSONDecoder()
     guard let decodedData = try? decoder.decode(GenericResponse.self, from: data) else { return .pathError }
     let tokenData = decodedData.data
     return .success(tokenData)
 }
 
-func judge(by statusCode: Int, _ data: Data) -> NetworkResults<Any> {
+func judge1(by statusCode: Int, _ data: Data) -> NetworkResults<Any> {
     switch statusCode {
-    case 200: return isUser(by: data)
+    case 200: return isUser1(by: data)
     case 400: return .pathError
     case 500: return .serverError
     default: return .networkFail

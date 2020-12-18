@@ -33,21 +33,6 @@ class AccountTableViewCell: UITableViewCell {
 
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-//        icListbox.image = UIImage(named: "icBank")
-        amountLabel.text = "20,000원"
-        bankNameLabel.text = "은행명"
-
-    }
-    
-
-//    override func layoutSubviews() {
-//          super.layoutSubviews()
-//          //set the values for top,left,bottom,right margins
-//          let margins = UIEdgeInsets(top: 30, left: 10, bottom: 30, right: 10)
-//          contentView.frame = contentView.frame.inset(by: margins)
-//          contentView.layer.cornerRadius = 8
-//    }
+        
 }
 
